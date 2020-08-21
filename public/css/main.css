@@ -1,0 +1,207 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;
+
+700&display=swap);* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  max-width: 100vw;
+}
+
+.wrapper {
+  width: 100%;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.wrapper h3 {
+  color: #4285F4;
+  padding: 30px 0 10px;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.wrapper .container {
+  padding: 30px;
+  flex: 1 1 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 0;
+}
+
+.wrapper .container .form {
+  flex-basis: 35%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px 0px #4285F4;
+}
+
+.wrapper .container .form-group {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 5px 0;
+}
+
+.wrapper .container .form-container {
+  width: 100%;
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.wrapper .container .form-date {
+  flex: 1 1 60%;
+  padding-right: 5px;
+}
+
+.wrapper .container .form-date input[type=date] {
+  width: 100%;
+  border: 1px solid #4285F4;
+  padding: 10px;
+  outline: none;
+  border-radius: 10px;
+}
+
+.wrapper .container .form-date input[type=date]:focus {
+  border: 1px solid #a2c3fa;
+}
+
+.wrapper .container .form-date input[type=date].invalid {
+  border: 1px solid #DB4437;
+  background: rgba(204, 120, 120, 0.5);
+}
+
+.wrapper .container .form-time {
+  flex: 1 1 40%;
+}
+
+.wrapper .container .form-time input[type=time] {
+  width: 100%;
+  border: 1px solid #4285F4;
+  padding: 10px;
+  outline: none;
+  border-radius: 10px;
+}
+
+.wrapper .container .form-time input[type=time]:focus {
+  border: 1px solid #a2c3fa;
+}
+
+.wrapper .container .form-time input[type=time].invalid {
+  border: 1px solid #DB4437;
+  background: rgba(204, 120, 120, 0.5);
+}
+
+.wrapper .container .form-label {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.wrapper .container .form-label label {
+  font-size: 1.2rem;
+}
+
+.wrapper .container .form-control {
+  width: 100%;
+}
+
+.wrapper .container .form-control input[type=text] {
+  width: 100%;
+  border: 1px solid #4285F4;
+  padding: 10px;
+  outline: none;
+  border-radius: 10px;
+}
+
+.wrapper .container .form-control input[type=text]:focus {
+  border: 1px solid #a2c3fa;
+}
+
+.wrapper .container .form-control input[type=text].invalid {
+  border: 1px solid #DB4437;
+  background: rgba(204, 120, 120, 0.5);
+}
+
+.wrapper .container .form-control .error {
+  color: #DB4437;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.wrapper .container .form-button {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px 0;
+}
+
+.wrapper .container .form-button button {
+  width: auto;
+  padding: 10px 30px;
+  color: #fff;
+  background: #DB4437;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.wrapper .container .form-button button:hover {
+  background: #df584d;
+}
+
+.wrapper .success {
+  width: 100%;
+  background-color: #0F9D58;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.8rem;
+  padding: 5px 0;
+}
+
+@media screen and (max-width: 576px) {
+  .wrapper .container .form {
+    flex-basis: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .container .form {
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .wrapper .container .form {
+    flex-basis: 45%;
+  }
+}
+
