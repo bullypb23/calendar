@@ -29,7 +29,7 @@
                 @honeypot
                 <div class="form-group">
                     <div class="form-label">
-                        <label for="name">Event name</label>
+                        <label for="name">Name</label>
                     </div>
 
                     <div class="form-control">
