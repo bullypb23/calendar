@@ -30,6 +30,24 @@ When you are done with installation, copy the .env.example file to .env
 $ cp .env.example .env
 ```
 
+Generate application key
+```
+$ php artisan key:generate
+```
+
+Change this environmental variables
+```
+MAIL_USERNAME=bb4c5e18183e6f
+MAIL_PASSWORD=2de628bc07a6e3
+MAIL_FROM_ADDRESS=mmilanovic163@gmail.com
+GOOGLE_CALENDAR_ID=mmilanovic163@gmail.com
+```
+
+Config cache
+```
+$ php artisan config:cache
+```
+
 Run the application
 ```
 $ php artisan serve
